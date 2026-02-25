@@ -16,10 +16,10 @@ jobs:
       - name: Connect to AWS
         uses: appleboy/ssh-action@v1
         with:
-          host: ${{ secrets.HOST }} # your server IP address
-          username: ${{ secrets.USERNAME }} #your vm-os
+          host: 18.207.120.30 # your server IP address
+          username: ubuntu #your vm-os
           key: ${{ secrets.KEY }}   #secret keys
-          port: ${{ secrets.PORT }} #simple port
+          port: 22 #simple port
           script: |
             npm install
             npm run build
