@@ -1,0 +1,21 @@
+name: Deploy to AWS
+
+# Trigger the workflow when code is pushed to the main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    deploy:
+      # Use the latest version of Ubuntu as the virtual environment
+      runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Check out the code from the repository - this bascially clone the rep into my vm and do stuffs
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+
+
+
