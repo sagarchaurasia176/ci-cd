@@ -21,9 +21,13 @@ jobs:
           key: ${{ secrets.KEY }}   #secret keys
           port: 22 #simple port
           script: |
+            cd my-app
             npm install
             npm run build
             npm start
             ls -a
+          
+          
+
 
             
