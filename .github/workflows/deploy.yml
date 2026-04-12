@@ -16,7 +16,7 @@ jobs:
       - name: Connect to AWS
         uses: appleboy/ssh-action@v1
         with:
-          host: 3.209.10.132
+          host: 54.227.14.86
           username: ubuntu
           key: ${{ secrets.KEY }}
           port: 22 #simple port
