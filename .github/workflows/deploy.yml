@@ -16,9 +16,9 @@ jobs:
       - name: static page goes via ssh
         uses: appleboy/ssh-action@v1
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
+          host: 54.89.72.182
+          username: ubuntu
           key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.PORT }}
+          port: 22
           script: | 
                 ls -a
