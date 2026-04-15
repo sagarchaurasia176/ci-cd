@@ -21,5 +21,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
-            echo "✅ Connected to server"
-            ./scripts/deploy.sh
+                echo "✅ Connected to server"
+                cd ~/ci-cd
+                chmod +x scripts/deploy.sh
+                ./scripts/deploy.sh
+                

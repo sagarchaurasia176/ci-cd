@@ -10,7 +10,9 @@ const page = () => {
     <button>Yooop me</button>
     <button>Yooop me</button>
     <button>Yooop me</button>
-    
+    <button>Yooop me</button>
+    <button>Yooop me</button>
+    <button>Yooop me</button>
     </div>
   )
 }
