@@ -9,6 +9,7 @@ const page = () => {
     <button>Yooo me</button>
     <button>Yooop me</button>
     <button>Yooop me</button>
+    <button>Yooop me</button>
     
     </div>
   )
