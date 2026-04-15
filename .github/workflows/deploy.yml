@@ -11,14 +11,34 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: static page goes via ssh
+      - name: Connect to Server and Debug
         uses: appleboy/ssh-action@v1
         with:
           host: 54.89.72.182
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           port: 22
-          script: | 
-                ls -a
+          script: |
+            echo "✅ Connected to server"
+            
+            echo "👤 Current user:"
+            whoami
+
+            echo "📍 Current directory:"
+            pwd
+
+            echo "📂 List all files:"
+            ls -la
+
+            echo "💾 Disk info:"
+            df -h
+
+            echo "🧠 Memory info:"
+            free -h
+
+            echo "🌿 Git version:"
+            git --version
+
+            echo "🔥 Done - SSH working fine"
