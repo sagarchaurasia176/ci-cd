@@ -22,23 +22,4 @@ jobs:
           port: 22
           script: |
             echo "✅ Connected to server"
-            
-            echo "👤 Current user:"
-            whoami
-
-            echo "📍 Current directory:"
-            pwd
-
-            echo "📂 List all files:"
-            ls -la
-
-            echo "💾 Disk info:"
-            df -h
-
-            echo "🧠 Memory info:"
-            free -h
-
-            echo "🌿 Git version:"
-            git --version
-
-            echo "🔥 Done - SSH working fine"
+            ./scripts/deploy.sh
